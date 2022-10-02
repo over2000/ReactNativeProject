@@ -9,18 +9,13 @@ export default function Configuracao({ navigation }) {
   const estilo = estilos(themeSelected)
 
   return (
-    <View style={estilo.container}>
-      <Text style={estilo.titulo}>Configuração</Text>
-
-      <View style={estilo.inputArea}>
-        <Text style={estilo.subtitulo}>Tema: {theme}</Text>
-        <Switch
-          onValueChange={() =>
-            theme === 'dark' ? setTheme('light') : setTheme('dark')
-          }
-          value={theme === 'dark' ? true : false}
-        />
-      </View>
+    <View style={estilo.inputArea}>
+      <Switch
+        onValueChange={() =>
+          theme === 'dark' ? setTheme('light') : setTheme('dark')
+        }
+        value={theme === 'dark' ? true : false}
+      />
     </View>
   )
 }
