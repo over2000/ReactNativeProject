@@ -5,7 +5,7 @@ import { Produto } from '../../componentes/Produto'
 import { produtos } from './produtos'
 import { estilos } from './estilos'
 import { Feather } from 'react-native-vector-icons'
-import MaterialCommunityIcons from 'react-native-vector-icons/Feather'
+import Configuracao from '../Configuracao'
 
 export default function Principal({ navigation }) {
   const ultimosVistos = []
@@ -31,11 +31,8 @@ export default function Principal({ navigation }) {
           <View style={estilo.carrinhoQuantidadeArea}>
             <Text style={estilo.carrinhoQuantidade}>0</Text>
           </View>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Configurações')}
-            style={estilo.iconArea}
-          >
-            <MaterialCommunityIcons
+          <TouchableOpacity style={estilo.iconArea}>
+            <Configuracao
               name='settings'
               size={30}
               color='#fff'
