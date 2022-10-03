@@ -1,6 +1,7 @@
 import { Text, View, FlatList, StatusBar, TouchableOpacity } from 'react-native'
 import { useContext } from 'react'
 import { ThemeContext } from '../../contexts/themeContext'
+import { UserContext } from '../../contexts/userContext'
 import { Produto } from '../../componentes/Produto'
 import { produtos } from './produtos'
 import { estilos } from './estilos'
@@ -11,14 +12,15 @@ export default function Principal({ navigation }) {
   const ultimosVistos = []
 
   const { themeSelected } = useContext(ThemeContext)
-
   const estilo = estilos(themeSelected)
+
+  const { user } = useContext(UserContext)
 
   return (
     <View style={estilo.container}>
       <StatusBar />
       <View style={estilo.tituloArea}>
-        <Text style={estilo.titulo}>Olá, NOME</Text>
+        <Text style={estilo.titulo}>Olá, {user?.name}</Text>
         <View style={estilo.carrinhoArea}>
           <TouchableOpacity onPress={() => {}}>
             <Feather
