@@ -3,24 +3,27 @@ import { StyleSheet } from 'react-native'
 export const estilos = (theme) => {
   return StyleSheet.create({
     container: {
+      fontFamily: 'Mitr-Light',
       flex: 1,
       backgroundColor: theme.fundo,
       alignItems: 'center',
       justifyContent: 'center',
     },
     titulo: {
+      fontFamily: 'Mitr-Light',
       fontSize: 25,
-      fontWeight: 'bold',
       color: theme.texto,
       marginBottom: 20,
     },
     inputArea: {
+      fontFamily: 'Mitr-Light',
       height: 200,
       width: '100%',
       alignItems: 'center',
       justifyContent: 'center',
     },
     input: {
+      fontFamily: 'Mitr-Light',
       height: 40,
       width: '90%',
       backgroundColor: theme.input,
@@ -39,6 +42,7 @@ export const estilos = (theme) => {
       marginBottom: 15,
     },
     botaoTexto: {
+      fontFamily: 'Mitr-Light',
       fontSize: 18,
       fontWeight: '400',
       color: theme.preto,
