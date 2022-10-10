@@ -11,27 +11,27 @@ const tema = {
 }
 
 const dark = {
-  fundo: '#051933',
-  titulo: '#FFFFFF',
-  texto: '#FFFFFF',
+  fundo: '#455a64',
+  titulo: '#edf0f2',
+  texto: '#edf0f2',
   branco: '#FFFFFF',
   preto: '#000000',
   cinza: '#093245',
   ultimosVistos: '#093245',
-  botao: '#A3FEBF',
-  input: '#FFFFFF',
+  botao: '#edf0f2',
+  input: '#edf0f2',
 }
 
 const light = {
-  fundo: '#FFFFFF',
-  titulo: '#051933',
-  texto: '#000000',
+  fundo: '#edf0f2',
+  titulo: '#000a12',
+  texto: '#000a12',
   branco: '#000000',
   preto: '#FFFFFF',
   cinza: '#ebebeb',
   ultimosVistos: '#ccefff',
-  botao: '#2a663c',
-  input: '#0b2a52',
+  botao: '#4f5b62',
+  input: '#bbbebf',
 }
 
 export { tema, dark, light }
